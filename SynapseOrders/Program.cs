@@ -1,8 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Serilog;
 using SynapseOrders.Services;
-using System.Threading.Tasks;
-using SynapseOrders.Models;
 
 namespace SynapseOrders
 {
@@ -19,7 +18,14 @@ namespace SynapseOrders
                 // We could add other logging options here
                 // For example writing to a log file
                 // Which We would store the location in a config file
+                // Would have implemented Serilog if I had time
             });
+
+            // Start of adding Serilog
+            //Log.Logger = new LoggerConfiguration()
+            //   .WriteToConsole()  // Optional: Logs to console
+            //   .WriteTo.File("logs/app-log-.txt", rollingInterval: RollingInterval.Day)  // Logs to file, new file each day
+            //   .CreateLogger();
 
             services.AddHttpClient();
             services.AddTransient<IRestClient, RestClient>();
