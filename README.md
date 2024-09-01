@@ -29,3 +29,12 @@ SynapseOrderProcessing is a C# program designed to fetch medical equipment order
 4. Used configuration data in an `appsettings.json` file instead of hard-coded URLs for the endpoints.
 5. Finished the test suite to ensure comprehensive coverage and reliability.
 6. Added more inline comments throughout the code to clarify functionality and improve maintainability.
+
+## Assumtions
+
+I chose to use JSON Deserialzation instead of the Index notation the previous programmer used.
+I matched exactly the casing and spelling of all properties that were previously referenced
+using a JObject (jObject["property"]
+
+As I don't have the actual JSON contract to verify, another solution would have been
+to manually parse the JObject proprety by property.
