@@ -2,6 +2,7 @@
 
 SynapseOrderProcessing is a C# program designed to fetch medical equipment orders from an API, check their delivery status, send delivery alerts, and update orders through another API. The application is built to be robust and scalable, with a focus on efficient order management.
 
+As I do not know if the company is using .Net 6 or 8, I included syntax for both, and would follow whatever standards the company has laid out.
 ## Features
 
 - Fetches orders from an API and checks delivery status.
