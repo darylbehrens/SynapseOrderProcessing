@@ -74,7 +74,7 @@ namespace SynapseOrders.Test
             Assert.Equal(1, result.FailedOrders);
             Assert.False(result.IsSuccessful);
 
-            // Verify PostAsync was called twice
+            // Verify PostAsync was called three times
             _restClientMock.Verify(x => x.PostAsync(It.IsAny<string>(), It.IsAny<string>()), Times.Exactly(3));
         }
     }
